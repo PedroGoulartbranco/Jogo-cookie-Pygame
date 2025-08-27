@@ -15,6 +15,8 @@ pote_quase_cheio = pygame.image.load('Biscoitos/bote_quase_cheio.png').convert_a
 
 vidas = 5
 
+fase_atual = 1
+
 while rodando:
     for evento in pygame.event.get():
         if evento.type == pygame.QUIT:
@@ -24,7 +26,10 @@ while rodando:
 
     tela.blit(titulo_tranformado, (220, 10))
 
-    tela.blit(pote_quase_cheio, (500, 20))
+    tela.blit(pote_quase_cheio, (440, 20))
+
+    if fase_atual == 1:
+        pass
 
     pygame.display.flip()
 
